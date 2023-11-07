@@ -26,7 +26,6 @@ body{
   background-image: url('./images/bg-overlay.png');
 }
 
-
 #header {
   color: white;
   display: flex;
@@ -114,7 +113,6 @@ body{
   font-size: 0.8rem;
   letter-spacing: 3px;
 }
-
 
 .logo{
   width: 40px;
