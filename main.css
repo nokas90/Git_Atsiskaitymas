@@ -1,1 +1,8 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+body{
+  position: relative;
+  background-image: url('./images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
