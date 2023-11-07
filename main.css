@@ -35,9 +35,14 @@ body{
 
 #header a{
   text-decoration: underline dotted;
+  line-height: 1.5;
   color: white;
   font-weight: 100;
+  transition: 0.5s;
+}
 
+#header a:hover{
+  color: lightskyblue
 }
 
 #header nav{
@@ -59,6 +64,16 @@ body{
   transition: .5s;
 }
 
+#header li:first-child{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#header li:last-child{
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 #header li:hover{
   background-color: rgba(245, 245, 245, 0.26);
   cursor: pointer;
@@ -71,19 +86,22 @@ body{
 
 #header > nav > ul > li > a{
   flex: 1;
-
   text-decoration: none;
   font-size: 0.8rem;
   letter-spacing: 3px;
 }
 
+
 .logo{
-  margin-bottom: 100px;
   width: 40px;
   height: 40px;
   padding: 30px;
   border: 1px white solid;
   border-radius: 50%;
+}
+
+.headerText{
+  padding-bottom: 20px;
 }
 
 .headerText > h1{
@@ -105,4 +123,34 @@ body{
   border-bottom: 1px solid white;
   width: 100%;
   margin-bottom: 40px;
+}
+
+.borderLine2{
+  margin-top: 40px;
+  border-bottom: 1px solid white;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px){
+  #header ul{
+    flex-direction: row;
+  }
+
+  #header li{
+    padding: 10px 40px;
+  }
+
+  #header li:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+  }
+  
+  #header li:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
 }
