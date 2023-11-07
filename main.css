@@ -138,13 +138,24 @@ body{
 
 /*Modals*/
 
+
+
 #modals dialog {
   position: relative;
   border: none;
   border-radius: 5px;
-  padding: 9px;
+  padding: 10px;
   background-color: rgb(44, 44, 44);
   color: antiquewhite;
+}
+
+#modals >dialog::backdrop {
+  background-image: url('./images/bg.jpg');
+  background-color: rgba(0, 0, 0, 0.521);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  z-index: 5;
 }
 
 #modals dialog > h3 {
@@ -164,6 +175,7 @@ body{
   width: 100%;
   object-fit: cover ;
 }
+
 #modals dialog > h3 {
   text-decoration: underline;
 }
@@ -204,5 +216,30 @@ body{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 0px;
+  }
+
+  /*modals*/
+
+  
+
+  #modals dialog {
+    width: 80%;
+    padding: 20px;
+
+  }
+
+  #modals dialog > h3 {
+    font-size: 1rem
+  }
+  #modals dialog > p {
+    font-size: 0.8rem
+  }
+
+  .modalImg > img {
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover ;
+    object-position: center;
   }
 }
