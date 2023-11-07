@@ -178,6 +178,11 @@ body{
   text-decoration: underline;
 }
 
+.introModalVideo {
+  width: 100%;
+  border-radius: 5px;
+}
+
 .closeBtn{
   font-size: 20px;
   position: absolute;
@@ -234,8 +239,16 @@ body{
   .modalImg > img {
     border-radius: 5px;
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover ;
     object-position: center;
+  }
+
+  .introModalVideo {
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover ;
+    object-position: top;
   }
 }
