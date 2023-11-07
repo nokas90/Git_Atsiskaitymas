@@ -10,7 +10,6 @@ const workModal = document.querySelector('.workModal')
 
 const workBtn = document.querySelector('.workBtn')
 
-
 workBtn.addEventListener('click', () =>{
   workModal.showModal();
 })
@@ -19,7 +18,6 @@ const aboutModal = document.querySelector('.aboutModal')
 
 const aboutBtn = document.querySelector('.aboutBtn')
 
-
 aboutBtn.addEventListener('click', () =>{
   aboutModal.showModal();
 })
@@ -27,7 +25,6 @@ aboutBtn.addEventListener('click', () =>{
 const contactModal = document.querySelector('.contactModal')
 
 const contactBtn = document.querySelector('.contactBtn')
-
 
 contactBtn.addEventListener('click', () =>{
   contactModal.showModal();
