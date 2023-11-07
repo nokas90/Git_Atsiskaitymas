@@ -136,6 +136,7 @@ body{
 /*Modals*/
 
 #modals dialog {
+  position: relative;
   border: none;
   padding: 30px;
   background-color: rgb(44, 44, 44);
@@ -163,6 +164,11 @@ body{
   text-decoration: underline;
 }
 
+.closeBtn{
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+}
 
 @media (min-width: 768px){
   #header ul{

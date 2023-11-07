@@ -32,3 +32,15 @@ const contactBtn = document.querySelector('.contactBtn')
 contactBtn.addEventListener('click', () =>{
   contactModal.showModal();
 })
+
+const closeModalBtns = document.querySelectorAll('.closeBtn');
+closeModalBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    introModal.close();
+    workModal.close();
+    aboutModal.close();
+    contactModal.close();
+  });
+});
+
+
