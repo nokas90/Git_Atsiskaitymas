@@ -8,10 +8,27 @@ introBtn.addEventListener('click', () =>{
 
 const workModal = document.querySelector('.workModal')
 
+const workBtn = document.querySelector('.workBtn')
 
 
-const aboutModal = document.querySelector('.introModal')
+workBtn.addEventListener('click', () =>{
+  workModal.showModal();
+})
+
+const aboutModal = document.querySelector('.aboutModal')
+
+const aboutBtn = document.querySelector('.aboutBtn')
 
 
+aboutBtn.addEventListener('click', () =>{
+  aboutModal.showModal();
+})
 
-const contactModal = document.querySelector('.introModal')
+const contactModal = document.querySelector('.contactModal')
+
+const contactBtn = document.querySelector('.contactBtn')
+
+
+contactBtn.addEventListener('click', () =>{
+  contactModal.showModal();
+})
