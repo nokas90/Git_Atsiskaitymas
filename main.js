@@ -1,0 +1,1 @@
+const introModal = document.querySelector('.introModal')
