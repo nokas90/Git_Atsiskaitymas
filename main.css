@@ -1,18 +1,81 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 body{
+  font-family: Roboto;
   position: relative;
   background-image: url('./images/bg.jpg');
   background-size: cover;
   height: 100vh;
-}
+  background-position: center;
+  
 
 .overlay {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-image: url('./images/bg-overlay.png');
-  /* opacity: 0.5;  */
+  
+}
+
+
+
+#header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#header a{
+  text-decoration: underline dotted;
+  color: white;
+  font-weight: 100;
+
+}
+
+#header ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+#header li{
+  list-style: none;
+  border: 1px solid white;
+  padding: 10px 100px;
+}
+
+
+
+.logo{
+  width: 50px;
+  padding: 30px;
+  border: 1px white solid;
+  border-radius: 50%;
+}
+
+.headerText > h1{
+  text-align: center;
+  line-height: 150%;
+  letter-spacing: 5px;
+
+}
+
+.headerText > p{
+  text-align: justify;
+  line-height: 200%;
+  letter-spacing: 3px;
+  font-weight: 100;
+
 }
